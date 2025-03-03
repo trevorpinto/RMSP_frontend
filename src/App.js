@@ -2,9 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import instance from './config';
 import axios from 'axios'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
-function counter(){
+function Counter(){
   const [count, setCounter] = useState(0)
 
   return (
@@ -17,39 +17,39 @@ function counter(){
   )
 }
 
-async function getResponseFromAPI(){
-  try{
-    const response = axios.get(instance)
-    console.log(response)
-  }
-  catch(error){
-    console.error(error)
-  }
-}
+// async function GetResponseFromAPI(){
+//   console.log(instance)
+//   console.log('after instance reached here')
+//   try{
+//     const response = await axios.get(instance)
+//     return;
+//   }
+//   catch(error){
+//     console.error(error)
+//     return;
+//   }
 
-async function App() {
-  counter();
+//   useEffect(() => {
+//     GetResponseFromAPI();
+//   },[])
+// }
+
+function App() {
+  console.log(instance.defaults)
+  const testAPI = async() => {
+    try{
+      const response = await instance.get('');
+      console.log(response.data);
+    }
+    catch(error){
+      console.error(error);
+    }
+  }
+  useEffect(() => {
+    testAPI();
+  },[])
 
   //await getResponseFromAPI();
-
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
 }
 
 export default App;
