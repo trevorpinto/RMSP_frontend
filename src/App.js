@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import image from './RMSP.png'
 import './App.css';
 import instance from './config';
@@ -20,26 +19,6 @@ function Counter(){
   )
 }
 
-function headerPage(){
-  return (<header className='headerPage'>
-    <div className='logoContainer'>
-        <img src = {image} className='logo'/>
-      <h1 className="title">Rate my SFU Professor</h1>
-    </div>
-      <nav>
-        <u1>
-          <l1>
-            <h3>About</h3>
-          </l1>
-          <l1>
-            <h3>Learn More</h3>
-          </l1>
-        </u1>
-      </nav>
-    </header>
-  )
-
-}
 
 // async function GetResponseFromAPI(){
 //   console.log(instance)
@@ -59,7 +38,6 @@ function headerPage(){
 // }
 
 function App() {
-  return headerPage()
   // console.log(instance.defaults)
   // const testAPI = async() => {
   //   try{

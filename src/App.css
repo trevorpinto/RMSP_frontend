@@ -37,29 +37,3 @@
   }
 }
 
-.headerPage{
-background-color: black;
-color: white;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-}
-.logo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%; 
-  object-fit: cover;
-  margin-right: 10px;
-}
-
-.title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 0;
-}
-.logoContainer {
-  display: flex;
-  align-items: center;
-}
