@@ -3,41 +3,18 @@ import './App.css';
 import instance from './config';
 import axios from 'axios'
 import { useEffect, useState } from 'react'
-
-console.log(image)
-
-function Counter(){
-  const [count, setCounter] = useState(0)
-
-  return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCounter(count + 1)}>
-        Click Me!
-      </button>
-    </div>
-  )
-}
+import DisplayHeader from './HomePage/Header.js';
 
 
-// async function GetResponseFromAPI(){
-//   console.log(instance)
-//   console.log('after instance reached here')
-//   try{
-//     const response = await axios.get(instance)
-//     return;
-//   }
-//   catch(error){
-//     console.error(error)
-//     return;
-//   }
-
-//   useEffect(() => {
-//     GetResponseFromAPI();
-//   },[])
-// }
+/*
+get response API code using useEffect
+*/
 
 function App() {
+  return (
+    <DisplayHeader/>
+    
+  )
   // console.log(instance.defaults)
   // const testAPI = async() => {
   //   try{
