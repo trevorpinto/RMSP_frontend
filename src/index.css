@@ -1,13 +1,139 @@
+/* Global Styles */
 body {
+  font-family: 'Inter', sans-serif; /* Or any clean sans-serif font */
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #f7f7f7; /* Light background */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align content from the top */
+  min-height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  width: 100%;
+  max-width: 1200px; /* Max width for content */
+}
+
+.App {
+  text-align: center;
+}
+
+/* Homepage Container */
+.homepage-container {
+  padding: 40px 20px;
+}
+
+.homepage-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+/* Cards Grid */
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to next line */
+  justify-content: center; /* Center cards in the grid */
+  gap: 30px; /* Space between cards */
+  padding: 20px 0;
+}
+
+/* Individual Card */
+.card-link {
+  text-decoration: none; /* Remove underline from link */
+  color: inherit; /* Inherit text color */
+  flex: 1 1 calc(33.333% - 60px); /* Approx 3 cards per row with gap */
+  max-width: 350px; /* Max width for individual card */
+  min-width: 280px; /* Min width before wrapping */
+  box-sizing: border-box; /* Include padding/border in width */
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Soft shadow */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  text-align: left; /* Align text within card */
+  height: 100%; /* Ensure cards are same height in a row */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Push arrow to bottom */
+}
+
+.card:hover {
+  transform: translateY(-8px); /* Lift effect on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+}
+
+.card h3 {
+  font-size: 1.6em;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.card p {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.6;
+  flex-grow: 1; /* Allow description to take up available space */
+}
+
+.card-arrow {
+  font-size: 2em;
+  color: #888;
+  align-self: flex-end; /* Align arrow to the right */
+  margin-top: 20px; /* Space above arrow */
+}
+
+/* Detail Page */
+.detail-page-container {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.detail-page-container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.detail-page-container p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #444;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 15px;
+  background-color: #eee;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #555;
+  transition: background-color 0.2s ease;
+}
+
+.back-link:hover {
+  background-color: #ddd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cards-grid {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    align-items: center;
+  }
+  .card-link {
+    flex: 1 1 auto; /* Allow full width for cards */
+  }
 }
