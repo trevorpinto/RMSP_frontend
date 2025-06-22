@@ -1,6 +1,10 @@
 # Frontend for RMSP 
 - retrieving data from backend endpoint in Spring
 - stored professor data in MongoDB database
+- utilized S3 to hold professor image data
+
+Head to Head Professor deathmatch!
+Winner moves on until there is only 1 winner!
 
 # Getting Started with Create React App
 
