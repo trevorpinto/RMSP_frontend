@@ -1,0 +1,25 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    list-style: none;
+
+}
+
+.header img{
+    max-width: 150px;
+    border-radius: 100px;
+    align-self: flex-start;
+}
+
+.header li:nth-of-type(2) { /* Pseudo element selector: This targets the second <li> (the "About" item) */
+    margin-left: auto;
+}
+
+.header li {
+    font-size: 1.1em;
+    color: white;
+    padding: 20px;
+    cursor: crosshair;
+}
+
