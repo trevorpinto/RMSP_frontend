@@ -4,6 +4,7 @@ import instance from './config';
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import DisplayHeader from './HomePage/Header.js';
+import FacultyCards from './HomePage/Card.js';
 
 
 /*
@@ -12,8 +13,11 @@ get response API code using useEffect
 
 function App() {
   return (
-    <DisplayHeader/>
-    
+    <>
+      <DisplayHeader/>
+      <FacultyCards/>
+    </>
+ 
   )
   // console.log(instance.defaults)
   // const testAPI = async() => {
