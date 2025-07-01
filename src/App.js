@@ -5,6 +5,7 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import DisplayHeader from './HomePage/Header.js';
 import FacultyCards from './HomePage/Card.js';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 
 /*
@@ -13,9 +14,19 @@ get response API code using useEffect
 
 function App() {
   return (
+
     <>
+    <Router>
       <DisplayHeader/>
-      <FacultyCards/>
+      <Routes>
+        {/* <Route path="/categories/comp-sci-profs" element={<FacultyCards />} />*/}
+          <Route path="/" element={<FacultyCards />} /> 
+
+      </Routes>
+     
+
+    </Router>
+
     </>
  
   )
