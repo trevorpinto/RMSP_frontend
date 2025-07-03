@@ -3,8 +3,9 @@
 - stored professor data in MongoDB database
 - utilized S3 to hold professor image data
 
-Head to Head Professor deathmatch!
-Winner moves on until there is only 1 winner!
+# Rules:
+
+Select a winner for each round... There can only be 1 winner in the end! 
 
 # Getting Started with Create React App
 
