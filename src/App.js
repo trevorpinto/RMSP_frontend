@@ -5,6 +5,7 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import DisplayHeader from './HomePage/Header.js';
 import FacultyCards from './HomePage/Card.js';
+import DeathmatchUI from './GameFolder/Deathmatch.js';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         {/* <Route path="/categories/comp-sci-profs" element={<FacultyCards />} />*/}
           <Route path="/" element={<FacultyCards />} /> 
+          <Route path="/categories/comp-sci-profs" element={ <DeathmatchUI/>} />
 
       </Routes>
      
