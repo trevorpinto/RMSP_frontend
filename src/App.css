@@ -86,3 +86,22 @@
 
 }
 
+
+/* GAME STATE UI CSS */
+
+.dmContainer{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.dmContainer img{
+    width: 300px;
+    height: 400px;
+    border-radius: 50px;
+
+}
+
+.dmContainer img:hover{
+    transform: scale(1.03);
+}
