@@ -1,6 +1,6 @@
 import React from "react";
-import image from "../1655938361292.jpg"
-import imageTwo from "../mmonagan.img.-990583746.png"
+import image from "../Images/1655938361292.jpg"
+import imageTwo from "../Images/mmonagan.img.-990583746.png"
 
 function DeathmatchUI(){
 

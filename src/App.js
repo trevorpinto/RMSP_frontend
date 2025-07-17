@@ -1,4 +1,3 @@
-import image from './RMSP.png'
 import './App.css';
 import instance from './config';
 import axios from 'axios'

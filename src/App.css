@@ -20,7 +20,7 @@
     font-size: 1.1em;
     color: white;
     padding: 20px;
-    cursor: crosshair;
+    cursor: pointer;
 }
 
 .flex-container{
@@ -41,7 +41,7 @@
     width: 300px;
     height: 400px;
     border-radius: 50px;
-    background-image: url(../src/1655938361292.jpg);
+    background-image: url(../src/Images/1655938361292.jpg);
     background-size: cover;
 
 }
@@ -54,7 +54,7 @@
     width: 300px;
     height: 400px;
     border-radius: 50px;
-    background-image: url(../src/rochelle-tucker.img.-1151543287.png);
+    background-image: url(../src/Images/rochelle-tucker.img.-1151543287.png);
     background-size: cover;
 
 }
